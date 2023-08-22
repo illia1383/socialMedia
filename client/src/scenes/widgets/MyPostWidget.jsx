@@ -45,7 +45,7 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picture", image);
       formData.append("picturePath", image.name);
     }
-
+ 
     const response = await fetch(`https://severside-iih1.onrender.com/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
