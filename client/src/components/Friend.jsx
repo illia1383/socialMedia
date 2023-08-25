@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://severside-iih1.onrender.com/users/${_id}/${friendId}`, //fixed error on this line 
+      `https://severside-iih1.onrender.com/users/${_id}/${friendId}`,    //fixed error on this line 
       {
         method: "PATCH",
         headers: {
